@@ -1,7 +1,10 @@
 {
   "name": "english-speaking-app",
   "version": "1.0.0",
- "scripts": {
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && uv run uvicorn app.main:app --reload\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uv run uvicorn app.main:app --reload",
     "commit": "cz"
   },
   "config": {
@@ -11,6 +14,7 @@
   },
   "devDependencies": {
     "commitizen": "^4.3.1",
+    "concurrently": "^9.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.5.4"
   }
