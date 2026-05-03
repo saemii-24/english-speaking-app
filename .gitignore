@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+frontend/node_modules/
+
+# next
+frontend/.next/
+frontend/out/
+
+# env
+.env
+.env.local
+.env.*.local
+frontend/.env.local
+backend/.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# uploads / temp
+backend/uploads/
+backend/temp/
+
+# db
+*.db
+
+# system
+.DS_Store
+Thumbs.db

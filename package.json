@@ -1,0 +1,17 @@
+{
+  "name": "english-speaking-app",
+  "version": "1.0.0",
+ "scripts": {
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.5.4"
+  }
+}
