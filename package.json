@@ -2,9 +2,8 @@
   "name": "english-speaking-app",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && uv run uvicorn app.main:app --reload\"",
-    "dev:frontend": "cd frontend && npm run dev",
-    "dev:backend": "cd backend && uv run uvicorn app.main:app --reload",
+      "dev": "docker compose up --build",
+    "dev:local": "concurrently \"npm run dev --prefix frontend\" \"cd backend && uv run uvicorn app.main:app --reload\"",
     "commit": "cz"
   },
   "config": {

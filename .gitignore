@@ -19,9 +19,10 @@ __pycache__/
 .venv/
 venv/
 
-# uploads / temp
+# uploads / temp / static
 backend/uploads/
 backend/temp/
+backend/app/static/
 
 # db
 *.db
